@@ -1,0 +1,21 @@
+.title{
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 3.3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.underline{
+    width: 22rem;
+    height: 0.3rem;
+    background-color: #C91C63;
+    margin-inline: auto;
+}
+@media screen and (max-width: 500px){
+    .title{
+        font-size: 2.9rem;
+    }
+    .underline{
+        width: 12rem;
+    }
+}

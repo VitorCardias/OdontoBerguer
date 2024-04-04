@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css"
+import Container from "./components/Container";
+
+import Footer from "./components/Footer";
+import Form from "./components/Form";
+import Header from "./components/Header";
+import Title from "./components/Title";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <section className={styles.inicio}>
+        <h1>Consultório<br/>OdontoBerguer</h1>
+      </section>
+      <div className={styles.form}>
+        <Form/>
+      </div>
+      <Container>
+        <Title>Todo o cuidado que seu sorriso merece!</Title>
+        <Title>Nossa equipe de profissionais!</Title>
+        <Title>Venha nos conhecer pessoalmente!</Title>
+      </Container>
+      <Footer />
     </div>
   );
 }
